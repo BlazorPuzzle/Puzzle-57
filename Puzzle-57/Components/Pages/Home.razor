@@ -1,0 +1,13 @@
+﻿@page "/"
+@using System.Globalization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Home> Localize
+
+<PageTitle>Home</PageTitle>
+
+<h1>@Localize["Greeting"]</h1>
+
+Welcome to your new app.
+
+
+<CultureComponent />
