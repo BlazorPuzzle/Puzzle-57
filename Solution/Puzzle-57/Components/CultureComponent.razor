@@ -1,0 +1,22 @@
+﻿@page "/culture-example-1"
+@using System.Globalization
+
+<h2>Culture Examples</h2>
+
+<ul>
+  <li><b>CurrentCulture</b>: @CultureInfo.CurrentCulture</li>
+  <li><b>CurrentUICulture</b>: @CultureInfo.CurrentUICulture</li>
+</ul>
+
+<h3>Rendered values</h3>
+
+<ul>
+  <li><b>Date</b>: @dt</li>
+  <li><b>Number</b>: @number.ToString("N2")</li>
+</ul>
+
+
+@code {
+  private DateTime dt = DateTime.Now;
+  private double number = 1999.69;
+}
